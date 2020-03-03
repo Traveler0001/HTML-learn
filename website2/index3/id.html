@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>id</title>
+	<style type="text/css">
+		/*标签选择器*/
+		div{
+			width: 200px;
+			height: 200px;
+			border: 3px double;
+		}
+		/*id选择器*/
+		#box1{
+			width: 200px;
+			height: 200px;
+			border: 3px double red;
+		}
+		/*类选择器*/
+		.box2{
+			width: 200px;
+			height: 200px;
+			border: 3px double blue;
+		}
+	</style>
+</head>
+<body>
+	<a id="id"><h1>`this is id page</h1></a>
+	<a id="top"><h2>`this is top</h2></a>
+	<a href="../note.md" target="_blank"><h1>this is note</h1></a>
+
+	<div id="box1">box1[id选择器]</div>
+
+	<div class="box2">box2[类选择器]</div>
+	
+	<div>
+		<p>
+			<a class="box2">box3[类选择器]</a>
+		</p>
+	</div>
+	<div>box4[标签选择器]</div>
+
+
+</body>
+</html>

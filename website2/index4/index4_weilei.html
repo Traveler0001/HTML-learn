@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index4_weilei</title>
+	<style type="text/css">
+		.box{
+			width: 300px;
+			height: 100px;
+			background: #e5eecc;
+		}
+		a.cus-link:link/*默认状态下伪类的样式*/{
+			display: inline-block;/*以按钮样式显示*/
+			padding: 3px 10px 4px;/*设置文字与边框的距离，类似于盒子模型*/
+			background: #8ac007;/*背景色*/
+			border-radius: 5px;/*设置盒子圆角5px*/
+			font-size: 12px;/*字体大小*/
+			color: #fff;/*字体颜色*/
+			text-decoration: none;/*不显文本示下划线*/
+		}
+		a.cus-link:hover/*鼠标悬浮时的样式*/{
+			background-color: #fff;
+			color: #90b575;
+		}
+		img{
+			width: 30%;
+			height: 30%;
+		}
+		img:hover/*鼠标悬浮时的样式*/{
+			width: 50%;
+			height: 50%;
+		}
+	</style>
+</head>
+<body>
+	<a id="top">
+		<h2>
+			this is top
+		</h2>
+	</a>
+	<a href="../note.md" target="_blank">
+		<h1>
+			this is note
+		</h1>
+	</a>
+	<div class="box">
+		<a href="#" class="cus-link">
+			bottom
+		</a>
+	</div>
+	<div>
+		<h3>
+			<img src="../images/psb2.jpg">
+			鼠标悬浮时会变化
+		</h3>
+	</div>
+
+</body>
+</html>
