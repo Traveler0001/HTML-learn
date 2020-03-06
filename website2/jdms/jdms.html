@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东秒杀</title>
+	<style type="text/css">
+		*{
+			margin: 0;/**/
+			padding: 0;/**/
+			font: 12px/1.5 "微软雅黑",Tahoma,Arial,Harrington, "sans-serif";/*规定字体的所有属性*/
+		}
+		a{
+			text-decoration: none;/*链接不显示下划线*/
+			color: #666;
+		}
+		a:hover{/*伪类，鼠标悬浮时有效*/
+			color:#c81632;
+		}
+		.top_top{
+			display: block;
+			text-align: center;
+			background-size: 100px 40px;
+			background-color: #565;
+			margin-bottom: 10px;
+		}
+		.item{
+			float: left;/*向左侧浮动*/
+			width: 190px;
+			height: 275px;
+			border: 1px solid #333;/*边框样式*/
+		}
+		.container{
+			overflow: hidden;/*内容溢出时会被修剪，，且其余内容不可见*/
+			border: 1px solid red;
+		}
+		.ms{
+			background-color: #e83632;
+			color: #fff;/*字体颜色*/
+			text-align: center;/*规定文本的水平对齐方式：居中*/
+		}
+		.ms .title/*这种定义方法表示样式只对ms里的title有效，对其他title无效*/{
+			font-size: 34px;/*规定字体尺寸*/
+			margin: 10px;
+		}
+		.ms .subtitle{
+			font-size: 20px;
+			color: rgb(255,255,255,0.5);/*透明色,第四项代表透明程度*/
+			margin-bottom: 10px;/*底部留空10px*/
+		}
+		.ms .icon{
+			width: 20px;
+			height: 33px;
+			display: block;/*此元素将显示为块级元素，此元素前后会带有换行符。*/
+			background-image: url(img/jdms1.png);
+			background-position: 0;/*图形移动，默认：宽 高*/
+			margin: 0 auto 20px;
+		}
+		.ms .desc{
+			font-size: 16px;
+			margin: 10px;
+		}
+		.ms .clock span/*ms内的clock内的span标签的样式*/{
+			display: inline-block;/*行内块元素*/
+			width: 40px;
+			height: 40px;
+			background-color: #2f3430;
+			font-size: 20px;
+			line-height: 40px;/*设置行高*/
+		}
+		.product_link{
+			display: block;
+			width: 100%;
+			text-align: center;
+			padding-top: 5px;/*padding-top 属性设置元素的上内边距（空间）*/
+		}
+		.product_link img{
+			width: 190px;
+			height: 190px;
+		}
+		.product_desc{
+			white-space: nowrap;/*文字不换行*/
+			text-align: left;
+			margin: -4px 11px 9px;/*margin 简写属性在一个声明中设置所有外边距属性。该属性可以有 1 到 4 个值*/
+			text-overflow: ellipsis;/*属性规定当文本溢出包含元素时发生的事情,ellipsis	显示省略符号来代表被修剪的文本。*/
+			width: 160px;
+			overflow: hidden;/*内容溢出时会被修剪，，且其余内容不可见*/
+		}
+		.item .ershou{
+			margin: 0 12px;
+    		font-size: 14px;
+    		height: 21px;
+   			line-height: 21px;
+   			color: #e01222;
+    		text-align: left;
+    		white-space: nowrap;
+    		text-overflow: ellipsis;
+    		overflow: hidden;
+    		margin-bottom: 5px;
+		}
+		.item .ershou img{
+		    display: inline-block;
+    		margin: -3px 2px 0 0;
+    		width: 40px;
+    		height: 19px;
+    		background-image: none;
+   			vertical-align: middle;
+		}
+		.item .new_price{
+			font-size: 16px;
+			color: #e01222;
+			margin: 0 25px;
+		}
+		.item .old_price{
+			font-size: 12px;
+			color: #999;
+		}
+	</style>
+</head>
+<body>
+	<a id="top">
+		<h2>
+			this is top
+		</h2>
+	</a>
+	<a class="top_top" href="../note.md" target="_blank">
+		<h1>
+			this is note
+		</h1>
+	</a>
+	<!--290*400>290*290>200*200-->
+	<div class="container">
+		<div class="item ms">
+			<h2 class="title">京东秒杀</h2>
+			<h3 class="subtitle">FLASH DEALS</h3>
+			<i class="icon"></i>
+			<p class="desc">本场距离结束</p>
+			<div class="clock">
+				<span class="hour">23</span>
+				<span class="minute">59</span>
+				<span class="second">59</span>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#" class="product_link">
+				<img src="img/jdms2.jpg">
+				<p class="product_desc">ThinkPad联想X240 i5/8G/240G12345678987654321
+				</p>
+			</a>
+			<p class="ershou">
+				<img src="img/二手.png">
+				123456789
+			</p>
+			<p>
+				<span class="new_price">
+					￥50
+				</span>
+				<span class="old_price">
+					<del>￥100</del>
+				</span>
+			</p>
+		</div>
+		<div class="item">
+			<a href="#" class="product_link">
+				<img src="img/jdms3.jpg">
+				<p class="product_desc">ThinkPad联想X240 i5/8G/240G12345678987654321
+				</p>
+			</a>
+			<p class="ershou">
+				<img src="img/二手.png">
+				123456789
+			</p>
+			<p>
+				<span class="new_price">
+					￥50
+				</span>
+				<span class="old_price">
+					<del>￥100</del>
+				</span>
+			</p>
+		</div>
+		<div class="item">
+			<a href="#" class="product_link">
+				<img src="img/jdms4.jpg">
+				<p class="product_desc">ThinkPad联想X240 i5/8G/240G12345678987654321
+				</p>
+			</a>
+			<p class="ershou">
+				<img src="img/二手.png">
+				123456789
+			</p>
+			<p>
+				<span class="new_price">
+					￥50
+				</span>
+				<span class="old_price">
+					<del>￥100</del>
+				</span>
+			</p>
+		</div>
+		<div class="item">
+			<a href="#" class="product_link">
+				<img src="img/jdms5.png">
+				<p class="product_desc">ThinkPad联想X240 i5/8G/240G12345678987654321
+				</p>
+			</a>
+			<p class="ershou">
+				<img src="img/二手.png">
+				123456789
+			</p>
+			<p>
+				<span class="new_price">
+					￥50
+				</span>
+				<span class="old_price">
+					<del>￥100</del>
+				</span>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -22,35 +22,43 @@
 1. `<title>Document</title>`<br>
 这个标签为网页的标题，就是浏览器最上端显示的内容
 2. `<h1>欢迎来到我的第一个站点</h1>`<br>
-这个标签为网页中显示的标题，共有六个级别，1最大，6最小，示例如下：<a href="/index1/index.html">这是实例链接</a>
+这个标签为网页中显示的标题，共有六个级别，1最大，6最小，示例如下：  
+    <a href="index1/index.html">这是实例链接</a>
     <h1>欢迎来到我的第一个站点</h1>
     <h6>欢迎来到我的第一个站点</h6>
+
 3. `<b>加粗</b>` 
-这个标签为加粗包裹的字符，示例如下：<a href="index.html">这是实例链接</a><br>
+这个标签为加粗包裹的字符，示例如下：  
+    <a href="index1/index.html">这是实例链接</a><br>
     <b>加粗</b>
+
 4. `<P>段落</p>`<br>
-用法类似于标题`<h></h>`示例如下：<a href="index.html">这是实例链接</a><br>
+    用法类似于标题`<h></h>`示例如下：  
+    <a href="index1/index.html">这是实例链接</a><br>
+
 5. `<i>倾斜</i>`<br>
-倾斜包裹的字符，效果类似加粗`<b></b>`,示例如下：<a href="index.html">这是实例链接</a><br>
+    倾斜包裹的字符，效果类似加粗`<b></b>`,示例如下：  
+    <a href="index1/index.html">这是实例链接</a><br>
+
 6. `<sup>上角标</sup>`<br>
-将包裹的字符以上角标的形式显示出来，示例如下：<a href="index.html">这是实例链接</a><br>
+将包裹的字符以上角标的形式显示出来，示例如下：<a href="index1/index.html">这是实例链接</a><br>
     EG<sup>上角标</sup>
 7. `<sub>下标</sub>`<br>
 同上。
 8. `<del>删除线</del>`<br>
-将包裹的字符显示成带删除线的样式，示例如下：<a href="index.html">这是实例链接</a><br>
+将包裹的字符显示成带删除线的样式，示例如下：<a href="index1/index.html">这是实例链接</a><br>
     <del>删除线</del>
 9. `<strong>强调语句</strong>`<br>
-此标签表示加重语气，显示样式与加粗一致，但语气更重，示例如下：<a href="index.html">这是实例链接</a><br>
+此标签表示加重语气，显示样式与加粗一致，但语气更重，示例如下：<a href="index1/index.html">这是实例链接</a><br>
 10. `<pre>原样输出(也叫预格式化)</pre>`<br>
-此标签将会原样输出输入内容，包括换行、空格、等，示例如下：<a href="index.html">这是实例链接</a><br>
+此标签将会原样输出输入内容，包括换行、空格、等，示例如下：<a href="index1/index.html">这是实例链接</a><br>
 11. `<ins>插入字</ins>`<br>
-此标签将会将包裹内容以插入字的样式显示(下划线)，示例如下：<a href="index.html">这是实例链接</a>
+此标签将会将包裹内容以插入字的样式显示(下划线)，示例如下：<a href="index1/index.html">这是实例链接</a>
     <br><ins>插入字</ins>
 12. `<br>`
-此标签将会产生换行效果，html中回车并不会显示换行，而是增加一个空格，示例如下：<a href="index.html">这是实例链接</a> 
+此标签将会产生换行效果，html中回车并不会显示换行，而是增加一个空格，示例如下：<a href="index1/index.html">这是实例链接</a> 
 13. `<bdo dir="*">显示方向<>`
-此标签将会将包裹内容按照设定方向显示，*默认有两个参数，rtl和ltr，示例如下：<a href="index.html">这是实例链接</a><br>
+此标签将会将包裹内容按照设定方向显示，*默认有两个参数，rtl和ltr，示例如下：<a href="index1/index.html">这是实例链接</a><br>
     ltr <bdo dir="ltr">方向</bdo><br>
     rtl <bdo dir="rtl">方向</bdo>
 
@@ -60,16 +68,16 @@
 `###`是具体属性名，`***`是具体属性值，不同属性之间用空格隔开，示例如下：<br>
     + href="`address`"<br>
     跳转到指定的位置，此位置可以是本地链接，也可以是url，<br>
-    <a href="index.html">这是实例链接[a-href"`*`"]</a>
+    <a href="index1/index.html">这是实例链接[a-href"`*`"]</a>
     + target="`mode`"  `mode`--`_blank`<br>
     指定打开链接的模式，`_blank`表示新标签页打开<br>
-    <a href="index.html" target="_blank">这是实例链接[a-href"`***`" target"_blank"]</a>
+    <a href="index1/index.html" target="_blank">这是实例链接[a-href"`***`" target"_blank"]</a>
     + herf="`address`#`ID值`"<br>
     此标签用于跳转到指定ID出，`#`必须有<br>
     `address`用于跳转到外部ID处
 2. `<a id="***">锚点[ID属性]（这是显示文本）</a>`<br>
 `<a name="#***">锚点[ID属性]（这是显示文本）</a>`<br>
-此标签用于标记锚点，ID值在在页面中是唯一的，并且包裹的文本没有特殊样式，调用ID值可实现跳转功能，示例如下：<a href="index.html">这是实例链接</a><br>
+此标签用于标记锚点，ID值在在页面中是唯一的，并且包裹的文本没有特殊样式，调用ID值可实现跳转功能，示例如下：<a href="index1/index.html">这是实例链接</a><br>
 `<a id="1">This is ID</a>`<br>
 `<a href="#1">The ID attribute is referenced here</a>`<br>
     <a id="1">This is ID</a><br>
@@ -97,7 +105,7 @@
         - width属性用于定义图片的宽度
         - title属性用于定义图片的提示信息  
 示例如下：  
-<a href="page2.html">这是实例链接</a><br>  
+<a href="index1/page2.html">这是实例链接</a><br>  
 
 >>## CSS3样式
 >>>### 样式的3种引入方式
@@ -276,16 +284,17 @@
         |:first-child|将样式添加到文档树中每一层元素的指定类型的第一个子元素|
         |:focus|向当前被选中，获得焦点的元素添加样式|
         |:lang|向带有指定lang属性的元素添加样式|
+        |:after|选择器在被选元素的内容后面插入内容,请使用 content 属性来指定要插入的内容|
 
         <a href="index4/index4_weilei.html">实例链接</a>
-        
+
 >>>### 浮动
 1. CSS排版
     + CSS提供了四种排版模型
         + 标准流排版
             <img src="note_images/普通文档流排版.png">
         + 浮动排版
-            +
+            + `float属性`
             |属性|属性值|说明|
             |:--|:--|:--|
             |float|none|默认值，元素不浮动，安装标准流排列元素|
@@ -301,9 +310,71 @@
         <a href="float/float.html"><h3>实例链接</h3></a>
                 + 浮动元素脱离文档流  
                 浮动的元素会脱离文档流
-                <img src="note_images/浮动元素脱离文档流.png">
-                <a href="float/float_2.html"><h3>实例链接</h3></a>
+        <img src="note_images/浮动元素脱离文档流.png">
+                + 父元素高度塌陷问题  
+        <a href="float/float3.html"><h3>实例链接</h3></a>
+                    + 解决方法
+        `clear属性`
+            |属性|属性值|说明|
+            |:--|:--|:--|
+            |clear|none|默认值，允许左，右两侧出现元素浮动|
+            ||left|不允许左侧元素浮动|
+            ||right|不允许右侧元素浮动|
+            ||both|不允许左右两侧出现浮动元素|
+            ||inherit|继承父元素的clear属性的值|
+
+            + <h3>BFC</h3>
+
+                + 什么是BFC：(Block Formatting Context)块级格式上下文，提供了独立的布局环境，环境中的内容不会影响到外部的布局，环境外的布局也不会影响到环境内的内容。就像是一个围墙，围墙中的内容出不来，围墙外的东西进不去。  
+        <a href="https://www.w3school.com.cn/cssref/selector_after.asp">W3school链接</a>
+
+                + 利用触发BFC解决浮动对布局的影响  
+                基本思想：父元素没有指定高度时，实际高度由子元素撑开，而子元素的浮动属性，使之脱离文档流，从而导致父容器高度坍塌，如果给父元素加上一个围墙(BFC)，围墙能包含浮动元素，使之无法脱离父元素的区域，从而表现出清除浮动的效果。  
+        <a href="float/float_4.html">实例链接</a>
+
+            + 总结  
+                + 浮动可以让块级元素在一行中显示
+                + 浮动可以让行内元素具有块级元素特征
+                + 浮动时直到碰到其他浮动框或者父容器的边框
+                + 浮动脱离了标准文档流，父容器会造成坍塌
+                + 使用清除浮动或者触发BFC来消除浮动对布局的影响
         + 定位排版
         + (3.0之后)flex排版
+
+>>>### CSS定位
+1. 什么是CSS定位
+    + 层级之间的叠加现象，能够使信息呈现纵向空见发展
+2. 常见的定位方式
+    + 静态定位
+    + 固定定位
+    + 相对定位
+    + 绝对定位
+3. 定位排版属性position
+    + position样式
+	|属性|属性值|说明|
+    |:--|:--|:--|
+    |position|static|默认值，静态定位、无定位，元素按照文档流进行布局|
+    |<a href="https://www.w3school.com.cn/cssref/pr_class_position.asp" target="_blank">w3school</a><a href="position/absolute.html" target="_blank">实例链接</a>|absolute|绝对定位，将对象从文档流中脱离出来，相对于最近的一个以定位的(相对/绝对)的祖先元素进行绝对定位;如果不存在这样的祖先元素，则相对于最外层包含框进行定位|
+    |<a href="position/index1.html" target="_blank">固定定位</a>|fixed|固定定位，依据浏览器窗口来进行位置偏移|
+    |<a href="position/relative.html" target="_blank">相对定位</a>|relative|相对于对象自身位置进行位置偏移(相对定位)|
+    ||inherit|规定应该从父元素继承 position 属性的值|
+
+    + 配套样式属性  
+    |属性|属性值|说明|
+    |:--|:--|:--|
+    |与fixted,absolute,relative配套使用|top|元素向上的偏移量|
+    ||left|元素向左的偏移量|
+    ||right|元素向右的偏移量|
+    ||bottom|元素向下的偏移量|
+    + 定位层级z-index
+    |属性值|说明|
+    |:--|:--|
+    |auto|默认值，层级高低与父元素相等|
+    |number|指定元素的层级高低，值越大，层级越高|
+    |inherit|继承父级元素的z-index属性值|
+4. 综合实例：  
+<h1><a href="jdms/jdms.html" target="_blank">京东秒杀</a></h1>
+
+
     
 

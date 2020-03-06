@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>relative</title>
+	<style type="text/css">
+		.box1,.box2,.box2_0,.box2_1,.box2_2,.box2_3,.box3,.box3_1{
+			width: 150px;
+			height: 150px;
+			border: 1px dashed #000;
+			display: inline-block;/*行内块元素*/
+			margin: 5px;
+		}
+		.box1{
+			background-color: #0ff; 
+		}
+		.box2{
+			background-color: #9cf;
+			width: 100px;
+			height: 100px;
+			position: relative;/*相对定位*/
+			left: 10px;/*距离左元素10px[相对于原始位置]*/
+			top: 10px;/*距离上元素（顶部）10px[相对于原始位置]*/
+		}
+		.box2_0{
+			background-color: #9cf;
+			width: 100px;
+			height: 100px;
+			position: relative;
+		}
+		.box2_1{
+			background-color: #853;
+		}
+		.box2_2{
+			background-color: #853;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			left: 30px;
+		}
+		.box2_3{
+			background-color: #853;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			left: 30px;
+			z-index: 2;
+		}
+		.box3{
+			background-color: #265;
+			position: relative;/*若有多个元素脱离文档流，后定义的将显示在最外层，先定义的将会被覆盖*/
+		}
+		.box3_1{
+			background-color: #265;
+			position: relative;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<a id="top">
+		<h2>
+			this is top
+		</h2>
+	</a>
+	<a href="../note.md" target="_blank">
+		<h1>
+			this is note
+		</h1>
+	</a>
+	<br>
+	<div class="box1">div1[无相对定位]</div>
+	<div class="box2_1">div2</div>
+	<div class="box3">div3[无相对定位]</div>
+	<p>[无相对定位]</p>
+	<br>
+	<div class="box1">div1[无相对定位]</div>
+	<div class="box2_0">div2</div>
+	<div class="box3">div3[无相对定位]</div>
+	<p>[相对定位（无位移）]</p>
+	<div class="box1">div1[无相对定位]</div>
+	<div class="box2">div2</div>
+	<div class="box3">div3[无相对定位]</div>
+	<p>[相对定位]（上移10px），左移10px</p>
+	<br>
+	<div class="box1">div1[无相对定位]</div>
+	<div class="box2_2">div2</div>
+	<div class="box3">div3[相对定位]</div>
+	<p>[相对定位](div2被覆盖)</p>
+	<br>
+	<div class="box1">div1[无相对定位]</div>
+	<div class="box2_3">div2</div>
+	<div class="box3">div3[相对定位]</div>
+	<p>[相对定位](通过z-index指定层级，box3被覆盖)</p>
+	<br>
+	<div class="box1">div1[无相对定位]</div>
+	<div class="box2_3">div2</div>
+	<div class="box3_1">div3[相对定位]</div>
+	<p>[相对定位](通过z-index指定层级，box2_3:2,box3_1:1,box2_3>box3_1,box3被覆盖)</p>
+	<a href="#top" target="_blank">
+		<h1>Top</h1>
+	</a>
+
+</body>
+</html>

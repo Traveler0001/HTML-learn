@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>absolute</title>
+	<style type="text/css">
+		.box{
+			width: 100px;
+			height: 100px;
+			border: 1px dashed #000;
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			background-color: #925;
+			position: absolute;
+		}
+		.box1_1{
+			width: 100px;
+			height: 100px;
+			background-color: #925;
+		}
+		.box1_2{
+			width: 100px;
+			height: 100px;
+			background-color: #925;
+			position: absolute;
+			right: 0;
+			/*top: 0;/*会移动到右上角，不方便观察*/
+		}
+		.box2{
+			width: 100px;
+			height: 100px;
+			background-color: #555;
+		}
+		.outer{
+			width: 600px;
+			height: 600px;
+			position: relative;
+			background-color: #198;
+		}
+		.box2_1{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background-color: #646;
+		}
+		.box3{
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background-color: #734;
+		}
+	</style>
+</head>
+<body>
+	<a id="top">
+		<h2>
+			this is top
+		</h2>
+	</a>
+	<a href="../note.md" target="_blank">
+		<h1>
+			this is note
+		</h1>
+	</a>
+	<div class="box">box1</div>
+	<br>
+	<div class="box1_1">box1</div>
+	<br>
+	<div class="box2">box2</div>
+	<br>
+	<div class="box box1">box1[box box1]</div>
+	<div class="box box2">box2[box box2]</div>
+	<p>box2被box1覆盖了，box1绝对定位，说明了box1脱离了文档流</p>
+	<br>
+	<div class="box box1_2">box1</div>
+	<div class="box box2">box2</div>
+	<p>position可以配合left，right等属性，此处box1绝对定位在屏幕右侧</p>
+	<div class="outer">
+		<div class="box2_1">dix2_1</div>
+	</div>
+	<p>当父容器为非static时，绝对定位的子元素会自动依据最近父容器的坐标进行定位，不会脱离父元素</p>
+	<br>
+	<div class="outer">
+		<div class="box3">
+			<div class="box2_1">box3</div>
+		</div>
+	</div>
+	<p>当父容器为非static时，绝对定位的子元素会自动依据最近父容器的坐标进行定位，不会脱离父元素,此例中继承关系为【青>红>紫】，红、紫为绝定位</p>
+	<a href="#top">
+		<h1>Top</h1>
+	</a>
+</body>
+</html>
